@@ -1,0 +1,22 @@
+#### System  
+ - In : data의 정의(의미,용도)를 하지 못하면 program이 어려워 짐.  
+        - data type : 정수, 실수, 문자, 문자열.....  
+        - range  
+ - Process : execute.  
+ - Out : 의도, 목적, 요구사항, 조건, 정의가 정확하지 않으면 알기 힘듦.  
+ 
+#### Error  
+ - Systax erro : 문법적인 에러. 공부를 안하면 자주 나는 에러이니 문법 반드시 숙지.  
+ - Runtime error : 대부분 경험이 부족해서 생기는 에러  
+  
+#### Function
+ - Library
+ - API(Application Programming Interface), SW와 OS 사이에 API가 있음.(OS와 HW사이에 protocol 이 있음.)  
+  
+#### Programming 순서  
+ - Programming 순서는 data 정의 -> 함수 만들기 -> interface 규칙만들기 순.  
+
+#### Computer  
+ - CPU : bit로 표현. ( 비슷한거로 Graphic card에 GPU가 있음. CUDA, RTX가 대표적)  
+ - Memory(RAM) : 1byte 단위. 명령과 data를 저장하고 OS 자체에서 관리. 주소(internal address)는 0번 부터.  
+ - Memory 구조
