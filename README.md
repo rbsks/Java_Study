@@ -4,4 +4,5 @@ Java Study 일지
 
 ------------------------------------------------------------------  
 ■ Java
-- [6/22](https://github.com/Gyubin0302/Java_Study/blob/master/0622.md)
+- [6/22](https://github.com/Gyubin0302/Java_Study/blob/master/0622.md)  
+- [Data Type, Operators](https://github.com/Gyubin0302/Java_Study/blob/master/Data%20Type%2C%20Operators.md)
