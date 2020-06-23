@@ -7,3 +7,5 @@ Java Study 일지
 - [6/22](https://github.com/Gyubin0302/Java_Study/blob/master/0622.md)  
 - [Data Type, Operators](https://github.com/Gyubin0302/Java_Study/blob/master/Data%20Type%2C%20Operators.md)  
 - [Scanner](https://github.com/Gyubin0302/Java_Study/blob/master/Scanner.md)  
+- [Math.random](https://github.com/Gyubin0302/Java_Study/tree/master)  
+
