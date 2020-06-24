@@ -9,11 +9,11 @@ public class Report {
 	
 	public static void main(String[] args) {
 		
-		String[] in = new String[10];
-		int[] nums = new int[in.length];
-		Scanner sc = new Scanner(System.in);
-		int Engnum = 0;
-		int total = 0;
+		String[] in = new String[10]; // 문자열 배열 객체생성
+		int[] nums = new int[in.length]; // 정수 배열 객체생성
+		Scanner sc = new Scanner(System.in); // Scanner 객체 생성
+		int Engnum = 0; // 영어 갯수 카운터
+		int total = 0; // 정수 총합
 		
 		
 		for (int i = 0; i < in.length; i++) {
