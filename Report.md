@@ -1,5 +1,5 @@
-'''
-package com.bit.deom1;
+
+''' package com.bit.deom1;
 
 import java.util.Scanner;
 
