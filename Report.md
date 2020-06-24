@@ -1,6 +1,4 @@
-''' java  
-
-
+```java  
 package com.bit.deom1;
 /*
  *  키보드로 입력을 받아 영문 갯수, 숫자의 총합 구하기.
@@ -37,6 +35,4 @@ public class Report {
 	}
 	
 }
-'''
-
-
+```
