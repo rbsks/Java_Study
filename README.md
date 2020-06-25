@@ -12,6 +12,8 @@ Java Study 일지
 - [Report](https://github.com/Gyubin0302/Java_Study/blob/master/Report.md)  
 - [Conditional statement](https://github.com/Gyubin0302/Java_Study/blob/master/Conditional%20statement.md)  
 - [for, while](https://github.com/Gyubin0302/Java_Study/blob/master/for%2C%20while.md)  
+- [Array](https://github.com/Gyubin0302/Java_Study/blob/master/Array.md)  
+
 
 
 
