@@ -9,5 +9,7 @@ Java Study 일지
 - [Scanner](https://github.com/Gyubin0302/Java_Study/blob/master/Scanner.md)  
 - [Math.random](https://github.com/Gyubin0302/Java_Study/blob/master/Math.random().md)  
 - [Random](https://github.com/Gyubin0302/Java_Study/blob/master/Random.md)  
-- [Report](https://github.com/Gyubin0302/Java_Study/blob/master/Report.md)
+- [Report](https://github.com/Gyubin0302/Java_Study/blob/master/Report.md)  
+- [Conditional statement](https://github.com/Gyubin0302/Java_Study/blob/master/Conditional%20statement.md)  
+
 
