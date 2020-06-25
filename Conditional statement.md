@@ -3,10 +3,12 @@
   - 종류로는 if, else, if-else, switch가 있다.
   - if문 예제  
   ![image](https://user-images.githubusercontent.com/67041069/85701822-c2971200-b718-11ea-93b5-4773302c3240.png)  
-  참인것만 실행하고 거짓은 실행안함
+  참인것만 실행하고 거짓은 실행안함  
+  
   - else 예제  
   ![image](https://user-images.githubusercontent.com/67041069/85702279-346f5b80-b719-11ea-897a-85bbfaa53a00.png)  
-  참과 거짓 둘중 무조건 하나는 실행
+  참과 거짓 둘중 무조건 하나는 실행  
+  
   - else-if 예제  
   ![image](https://user-images.githubusercontent.com/67041069/85702923-d68f4380-b719-11ea-8e54-9a7f5c6c7f91.png)  
   다중 조건 판단을 가능하게 함  
