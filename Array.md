@@ -46,9 +46,30 @@
 			    {1,2,3,4,5,6,7,8,9,10},  
 			    {1,2,3,4,5,6,7,8,9,10},  
 		            {1,2,3,4,5,6,7,8,9,10} }; //error new int[][] 생략할 수 없음  
+			    		
+		int[][] d2 = new int[5][3];
+		System.out.println(d2); // 2차 배열명
+		System.out.println(d2[0]); // 1차 배열명
+		d2[3][2] = 10; // 모든행의 마지막 열번호는 2
+
+		// 길이가 다른 2차 배열 : 각 행이되는 배열을 생성
+		int[][] d3 = new int[5][]; // 열 길이 미정
+		d3[0] = new int[4];
+		d3[1] = new int[14];
+		d3[2] = new int[14];
+		d3[3] = new int[14];
+		d3[4] = new int[3];
+		for(int r = 0 ; r < d3.length; r++) {
+			for(int c = 0; c < d3[r].length; c++) {
+				int v = d3[r][c];
+				System.out.print(v+" ");
+			}
+			System.out.println();
+		}
  ```  
   - table.length를 호출하면 5가나오고, table[0].length를하면 10이 반환.  
   - 배열은 2,3,4, 그 이상의 차원을 가질 수 있다. 하지만 3차원이상 배열을 쓸 수록 표현, 관리가 매우 어려워진다.  
+  - 2차원 배열은 각 행마다 길이를 다르게 생성 할 수 있다.  
  
   
 			 						          	
