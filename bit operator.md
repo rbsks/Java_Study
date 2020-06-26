@@ -9,17 +9,17 @@
   - ^ : XOR(베타적 논리합)연산자는 2진수로 표현된 2개의 bit가 둘 중 하나가 1이고 하나가 0 일 경우 1, 둘 다 1또는 0일경우 0  
   - ~ : NOT(논리부정)은 2진수로 표현된 피연산자의 갑을 반전(보수) 시켜주어 표현한다.  
   - 예제  
-  ``` java  
-	 int a = 0x5; // 0101
-	 int b = 0xA; // 1010
-	 int c = 30;  // 11110
-	 int d = 10;  // 1010
-	 System.out.println(a+" & "+b+" : "+(a&b));
-	 System.out.println(a+" | "+b+" : "+(a|b));
-	 System.out.println(a+" ^ "+b+" : "+(a^b)); 
-	 System.out.println("~"+a+" : "+~a+" "+"~"+b+" :"+~b);
-	 System.out.println();  
-    ```  
+``` java  
+	 int a = 0x5; // 0101  
+	 int b = 0xA; // 1010  
+	 int c = 30;  // 11110  
+	 int d = 10;  // 1010  
+	 System.out.println(a+" & "+b+" : "+(a&b));  
+	 System.out.println(a+" | "+b+" : "+(a|b));  
+	 System.out.println(a+" ^ "+b+" : "+(a^b));   
+	 System.out.println("~"+a+" : "+~a+" "+"~"+b+" :"+~b);  
+	 System.out.println();    
+```  
     ![image](https://user-images.githubusercontent.com/67041069/85854116-c2694600-b7ee-11ea-9a07-fb67b15bd000.png)  
     
 #### 비트 이동연산자  
@@ -27,9 +27,9 @@
   - << : 정수 데이터를 왼쪽으로 이동 시켜준다. 빈자리는 0으로 채워짐.  
   - >> : 정수 데이터를 오른쪽으로 이동 시켜준다.  빈자리는 정수의 최상위 부호비트와 같은 값으로 채워짐.  
   - 예제  
-  ``` java  
+``` java  
    System.out.println("1 << 2 : " + (1<<2)); // 0001(1) -> 0100(4)  
-   System.out.println("8 >> 2 : " + (8>>2)); // 1000(8) -> 0010(2)  
-   ```  
+   System.out.println("8 >> 2 : " + (8>>2)); // 1000(8) -> 0010(2)    
+```  
    ![image](https://user-images.githubusercontent.com/67041069/85854706-dc575880-b7ef-11ea-92d1-6ee50bebc614.png)  
   
