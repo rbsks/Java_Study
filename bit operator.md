@@ -20,7 +20,8 @@
 	 System.out.println("~"+a+" : "+~a+" "+"~"+b+" :"+~b);  
 	 System.out.println();    
 ```  
-    ![image](https://user-images.githubusercontent.com/67041069/85854116-c2694600-b7ee-11ea-9a07-fb67b15bd000.png)  
+   ![image](https://user-images.githubusercontent.com/67041069/85854116-c2694600-b7ee-11ea-9a07-fb67b15bd000.png)  
+
     
 #### 비트 이동연산자  
   - 비트 이동연산자는 정수 데이터의 비트를 왼쪽 또는 오른쪽으로 이동시켜 연산한다.  
