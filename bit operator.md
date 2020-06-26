@@ -29,8 +29,8 @@
   - (>>) : 정수 데이터를 오른쪽으로 이동 시켜준다.  빈자리는 정수의 최상위 부호비트와 같은 값으로 채워짐.  
   - 예제  
 ``` java  
-   System.out.println("1 << 2 : " + (1<<2)); // 0001(1) -> 0100(4)  
-   System.out.println("8 >> 2 : " + (8>>2)); // 1000(8) -> 0010(2)    
+        System.out.println("1 << 2 : " + (1<<2)); // 0001(1) -> 0100(4)  
+        System.out.println("8 >> 2 : " + (8>>2)); // 1000(8) -> 0010(2)    
 ```  
    ![image](https://user-images.githubusercontent.com/67041069/85854706-dc575880-b7ef-11ea-92d1-6ee50bebc614.png)  
   
