@@ -14,6 +14,7 @@ Java Study 일지
 - [for, while](https://github.com/Gyubin0302/Java_Study/blob/master/for%2C%20while.md)  
 - [Array](https://github.com/Gyubin0302/Java_Study/blob/master/Array.md)    
 - [Bit operator](https://github.com/Gyubin0302/Java_Study/blob/master/Bit%20operator.md)  
+- [Parking](https://github.com/Gyubin0302/Java_Study/blob/master/Parking.md)  
 
 
 
