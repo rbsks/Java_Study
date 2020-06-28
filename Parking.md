@@ -6,8 +6,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date; // Date Class는 날짜와 시간에 관한 정보를 표현.
 
 // 각각의 if문 안에 code들 method로 만들기.
-// 같은 주차번호가 입력되어있을 때 count안하기.
-// 요금정산시 차량 번호가 배열안에 없을 때 다시 입력하라는 문구 띄우기.
+// 같은 주차번호가 입력되어있을 때 count안하기.(불필요)
+// 요금정산시 차량 번호가 배열안에 없을 때 다시 입력하라는 문구 띄우기.(완료)
 
 
 public class ParkingMain {
@@ -24,6 +24,7 @@ public class ParkingMain {
 		SimpleDateFormat dayTime = new SimpleDateFormat("yyyy-MM-dd a hh:mm:ss.SS"); // 년-월-일 -오전/오후-시간(0~12)-분-초-미리초
 	
 		while(true) {
+			
 			System.out.println("주차 자리수 : " + (20 - parkingCount));
 			System.out.println("주차 요금 1분당 16원 ");
 			System.out.println();
@@ -40,20 +41,21 @@ public class ParkingMain {
 					System.out.println();
 					parkingSpot[parkingCount] = carNumber;
 					long reqTime = System.currentTimeMillis();
-					String reqTimestr = dayTime.format(new Date(reqTime));
+					//String reqTimestr = dayTime.format(new Date(reqTime));
 					parkingreqTime[parkingCount] = reqTime;
-					parkingCount++;
+					parkingCount++;					
 				}
+				
 			}else if(select == 2) {
 				sc.nextLine();
+				loop: while(true) {
 				System.out.print("차량 번호를 입력해주세요. :");
 				carNumber = sc.nextLine();
-				temp = carNumber;
 				
 				for(int i = 0; i < parkingSpot.length; i++ ) {
 					if(carNumber.equals(parkingSpot[i])) {
 						long resTime = System.currentTimeMillis();
-						String resTimestr = dayTime.format(new Date(resTime));
+						//String resTimestr = dayTime.format(new Date(resTime));
 						parkingresTime[i] = resTime;
 						long carIn = parkingreqTime[i];
 						long carOut = parkingresTime[i];
@@ -63,9 +65,16 @@ public class ParkingMain {
 						System.out.println();
 						parkingSpot[i] = "";
 						parkingCount--;
+						break loop;
+					}else {
+						System.out.println("잘못입력했습니다. 다시 입력해주세요.");
+						System.out.println();
 						break;
 					}
 				}
+				
+			}
+				
 			}else if(select == 3) {
 				System.out.println("차량 리스트");
 				for(int i = 0; i < parkingCount; i++) {
@@ -76,7 +85,7 @@ public class ParkingMain {
 			}else if(select == 4) {
 				System.out.println("주차 프로그램을 종료합니다.");
 				break;
-			}else if((parkingCount+1) == parkingSpot.length){
+			}if((parkingCount) == parkingSpot.length){
 				System.out.println("주차 자리가 꽉 찼습니다.");
 			}
 			
