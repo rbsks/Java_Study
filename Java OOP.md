@@ -8,7 +8,16 @@
       method : 접근자 반환형 메소드명(매개변수) {
                       실행내용  
                       필드에 대한 처리 표현  
-               }  
-               ```
+               }    
+  ```  
+  ``` java  
+  public class Main {  
+  
+    public static void main(String[] args) {  
+        Dummy ex(클래스형 변수) = new Dummy(); // 객체 생성
+    
+    }   
+ ```  
+ 
   
   
