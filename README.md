@@ -16,7 +16,7 @@ Java Study 일지
 - [Bit operator](https://github.com/Gyubin0302/Java_Study/blob/master/Bit%20operator.md)  
 - [Parking](https://github.com/Gyubin0302/Java_Study/blob/master/Parking.md)  
 - [Java OOP](https://github.com/Gyubin0302/Java_Study/blob/master/Java%20OOP.md)   
-- [Parking OOP](https://github.com/Gyubin0302/Java_Study/tree/master/Parking)  
+- [Parking OOP](https://github.com/Gyubin0302/Java_Study/tree/master/Parking%20OOP)  
 
 
 
