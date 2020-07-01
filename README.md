@@ -17,6 +17,7 @@ Java Study 일지
 - [Parking](https://github.com/Gyubin0302/Java_Study/blob/master/Parking.md)  
 - [Java OOP](https://github.com/Gyubin0302/Java_Study/blob/master/Java%20OOP.md)   
 - [Parking OOP](https://github.com/Gyubin0302/Java_Study/tree/master/Parking%20OOP)  
+- [Inheritance](https://github.com/Gyubin0302/Java_Study/blob/master/Inheritance.md)  
 
 
 
