@@ -20,6 +20,7 @@ Java Study 일지
 - [Inheritance](https://github.com/Gyubin0302/Java_Study/blob/master/Inheritance.md)  
 - [배열길이 늘리기](https://github.com/Gyubin0302/Java_Study/blob/master/%EB%B0%B0%EC%97%B4%20%EA%B8%B8%EC%9D%B4%20%EB%8A%98%EB%A6%AC%EA%B8%B0.md)  
 - [Abstract Class](https://github.com/Gyubin0302/Java_Study/blob/master/Astract%20Class.md)  
+-[Interface](https://github.com/Gyubin0302/Java_Study/blob/master/Interface.md)  
 
 
 
