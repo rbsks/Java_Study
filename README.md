@@ -26,5 +26,5 @@ Java Study 일지
 
 
 # Web  
-- [Create account](![image](https://user-images.githubusercontent.com/67041069/87163691-b909ce80-c302-11ea-8a93-5736999d9831.png)  
+- [Create account](https://github.com/Gyubin0302/Java_Study/blob/master/html5/Create%20account.md)  
 
