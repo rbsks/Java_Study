@@ -113,4 +113,5 @@ public class VararagsTest {
   ![image](https://user-images.githubusercontent.com/67041069/87312524-a2aa7f80-c55b-11ea-9787-121b8dd955fa.png)  
   - 버블정렬의 내림차순 결과  
   ![image](https://user-images.githubusercontent.com/67041069/87312565-b1913200-c55b-11ea-9f44-265ea002d333.png)  
+  #### 정렬의 오름차순과 내림차순은 if(b[j] < b[j+1]) if문 안에 관계연산자 방향에 의해서 결정된다.  
   
