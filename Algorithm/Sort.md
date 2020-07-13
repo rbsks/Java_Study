@@ -3,8 +3,8 @@ package com.bit.ex;
 
 public class VararagsTest {
 
-	// Ascending select sort
-	public void AsselectionSort(int ...a) {
+   // Ascending select sort
+   public void AsselectionSort(int ...a) {
         
         for(int i=0; i<a.length-1; i++) {
             int min = i;
@@ -14,8 +14,8 @@ public class VararagsTest {
                 }
             }
             int temp = a[min];
-	        a[min] = a[i];
-	        a[i] = temp;
+	    a[min] = a[i];
+	    a[i] = temp;
             System.out.printf("\n선택 정렬 %d 단계 : ", i+1);
             for(int v : a) {
                 System.out.printf("%3d ", v);
@@ -24,28 +24,28 @@ public class VararagsTest {
         System.out.println();
     }
 	
-	// Descending select sort
-		public void DeselectionSort(int ...a) {
+    // Descending select sort
+    public void DeselectionSort(int ...a) {
 	        
-	        for(int i=0; i<a.length-1; i++) {
-	            int min = i;
-	            for(int j=i+1; j<a.length; j++) { 
-	                if(a[j] > a[min]) { //오름차순 
+	 for(int i=0; i<a.length-1; i++) {
+	     int min = i;
+	     for(int j=i+1; j<a.length; j++) { 
+	         if(a[j] > a[min]) { //오름차순 
 	                    min = j;
-	                }
-	            }
-	            int temp = a[min];
-		        a[min] = a[i];
-		        a[i] = temp;
-	            System.out.printf("\n선택 정렬 %d 단계 : ", i+1);
-	            for(int v : a) {
-	                System.out.printf("%3d ", v);
-	            }         
-	        }
-	        System.out.println();
-	    }
+	         }
+	     }
+             int temp = a[min];
+	     a[min] = a[i];
+	     a[i] = temp;
+	     System.out.printf("\n선택 정렬 %d 단계 : ", i+1);
+             for(int v : a) {
+                 System.out.printf("%3d ", v);
+             }         
+	  }
+	  System.out.println();
+      }
 	
-	// Ascending bubble sort
+    // Ascending bubble sort
     public void AsbubbleSort(int ...b) {
         int size = b.length;
         for(int i=size-1; i>0; i--) {
@@ -53,19 +53,19 @@ public class VararagsTest {
             for(int j=0; j<i; j++) {
                 if(b[j] > b[j+1]) {
                     int temp = b[j];
-        	        b[j] = b[j+1];
-        	        b[j+1] = temp;
-                }
+        	    b[j] = b[j+1];
+        	    b[j+1] = temp;
+                 }
                 System.out.printf("\n\t");
                 for(int v : b) {
                     System.out.printf("%3d ", v);
                 }
-            }            
-        }
-        System.out.println();
+             }            
+          }
+          System.out.println();
     }
     
-	// Descending bubble sort
+    // Descending bubble sort
     public void DebubbleSort(int ...b) {
         int size = b.length;
         for(int i=size-1; i>0; i--) {
@@ -73,35 +73,35 @@ public class VararagsTest {
             for(int j=0; j<i; j++) {
                 if(b[j] < b[j+1]) {
                     int temp = b[j];
-        	        b[j] = b[j+1];
-        	        b[j+1] = temp;
+        	    b[j] = b[j+1];
+        	    b[j+1] = temp;
                 }
                 System.out.printf("\n\t");
                 for(int v : b) {
                     System.out.printf("%3d ", v);
                 }
-            }            
+             }            
         }
         System.out.println();
     }
 	
-	public static void main(String[] args) {
-	  VararagsTest test = new VararagsTest();
-	  System.out.println("=====[오름선택정렬]=====");
-	  test.AsselectionSort(50,60,80,11,123,455,124,1411,13);
-	  System.out.println();
-	  System.out.println("=====[내림선택정렬]=====");
-          test.DeselectionSort(50,60,80,11,123,455,124,1411,13);
+    public static void main(String[] args) {
+        VararagsTest test = new VararagsTest();
+        System.out.println("=====[오름선택정렬]=====");
+        test.AsselectionSort(50,60,80,11,123,455,124,1411,13);
+        System.out.println();
+	System.out.println("=====[내림선택정렬]=====");
+	test.DeselectionSort(50,60,80,11,123,455,124,1411,13);
 		
-	  System.out.println();
-	  System.out.println("=====[오름버블정렬]=====");
-	  test.AsbubbleSort(50,60,80,11,123,455,124,1411,13);
-	  System.out.println();
-	  System.out.println("=====[내림버블정렬]=====");
-	  test.DebubbleSort(50,60,80,11,123,455,124,1411,13);    
+	System.out.println();
+	System.out.println("=====[오름버블정렬]=====");
+	test.AsbubbleSort(50,60,80,11,123,455,124,1411,13);
+        System.out.println();
+        System.out.println("=====[내림버블정렬]=====");
+	test.DebubbleSort(50,60,80,11,123,455,124,1411,13);    
 		
 		
-	}
+     }
 
 }
 ```  
