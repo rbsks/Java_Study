@@ -71,7 +71,7 @@ public class VararagsTest {
         for(int i=size-1; i>0; i--) {
             System.out.printf("\n버블 정렬 %d 단계 : ", size-i);
             for(int j=0; j<i; j++) {
-                if(b[j] < b[j+1]) { // 내
+                if(b[j] < b[j+1]) { // 내림차순
                     int temp = b[j];
         	    b[j] = b[j+1];
         	    b[j+1] = temp;
