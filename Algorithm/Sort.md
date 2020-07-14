@@ -9,7 +9,7 @@ public class VararagsTest {
         for(int i=0; i<a.length-1; i++) {
             int min = i;
             for(int j=i+1; j<a.length; j++) { 
-                if(a[j] < a[min]) { 
+                if(a[j] < a[min]) { // 오름차순 
                     min = j;
                 }
             }
@@ -30,7 +30,7 @@ public class VararagsTest {
 	 for(int i=0; i<a.length-1; i++) {
 	     int min = i;
 	     for(int j=i+1; j<a.length; j++) { 
-	         if(a[j] > a[min]) { //오름차순 
+	         if(a[j] > a[min]) { //내림차순 
 	                    min = j;
 	         }
 	     }
@@ -51,7 +51,7 @@ public class VararagsTest {
         for(int i=size-1; i>0; i--) {
             System.out.printf("\n버블 정렬 %d 단계 : ", size-i);
             for(int j=0; j<i; j++) {
-                if(b[j] > b[j+1]) {
+                if(b[j] > b[j+1]) { // 오름차순
                     int temp = b[j];
         	    b[j] = b[j+1];
         	    b[j+1] = temp;
@@ -71,7 +71,7 @@ public class VararagsTest {
         for(int i=size-1; i>0; i--) {
             System.out.printf("\n버블 정렬 %d 단계 : ", size-i);
             for(int j=0; j<i; j++) {
-                if(b[j] < b[j+1]) {
+                if(b[j] < b[j+1]) { // 내
                     int temp = b[j];
         	    b[j] = b[j+1];
         	    b[j+1] = temp;
