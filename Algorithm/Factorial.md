@@ -24,7 +24,16 @@ public class Factorial {
 			
 			result *= i;
 		}
-		System.out.println("= "+result);
+		System.out.println("= "+result);  
+                for(int i = j; i <= 1; i--) {
+                if(i==1) {
+                  System.out.print(1 + " ");
+                }else {
+                  System.out.print(i + " * ");
+                }
+                result *= i;
+                }
+                System.out.println(" " + result);
 		sc.close();
 	}
 
