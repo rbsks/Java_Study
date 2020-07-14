@@ -19,4 +19,6 @@ public class Star {
 	}
 
 }
-```
+```  
+![image](https://user-images.githubusercontent.com/67041069/87431911-43637280-c622-11ea-90f7-288933708fcf.png)
+
