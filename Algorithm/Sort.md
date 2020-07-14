@@ -1,6 +1,11 @@
 ```java  
-package com.bit.ex;
+package com.bit.ex;  
 
+/**
+ * overloading을 줄이기위해서 varargs를 쓴다.
+ * @author bitcamp
+ *
+ */  
 public class VararagsTest {
 
    // Ascending select sort
