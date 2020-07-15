@@ -12,7 +12,8 @@ public class Factorial {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("숫자를 입력하세요 : ");
 		int j = sc.nextInt();
-		int result = 1;
+		int result1 = 1;
+		int result2 = 1;
 		for(int i = 1; i <= j; i++) {
 			if(i==j) {
 				System.out.print(1 + " ");
@@ -22,18 +23,18 @@ public class Factorial {
 				System.out.print(j-i+1 + " * ");
 			}
 			
-			result *= i;
+			result1 *= i;
 		}
-		System.out.println("= "+result);  
+		System.out.println("= "+result1);  
                 for(int i = j; i >= 1; i--) {
-                if(i==1) {
-                  System.out.print(1 + " ");
-                }else {
-                  System.out.print(i + " * ");
+			if(i==1) {
+			  System.out.print(1 + " ");
+			}else {
+			  System.out.print(i + " * ");
+			}
+			result2 *= i;
                 }
-                result *= i;
-                }
-                System.out.println(" " + result);
+                System.out.println("= " + result2);
 		sc.close();
 	}
 
