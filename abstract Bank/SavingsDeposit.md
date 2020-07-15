@@ -28,7 +28,7 @@ public class SavingsDeposit extends BankAccount{
 			month++;
 		}
 		
-		interest = price * (int)(interestRate/100) * (periodM - month ) / periodM;
+		interest = (int)((price * (interestRate/100)) * (periodM - month ) / periodM);
 		totalAmount = price + interest;
 	}
 
