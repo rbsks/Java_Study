@@ -33,7 +33,7 @@ I can do it
 # Algorithm  
 - [Sort](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Sort.md)  
 - [ACSII](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/ACSII.md)  
-- [Multiplication table](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/%20Multiplication%20table.md)  
+- [Multiplication table](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Multiplication%20table.md)  
 - [Factorial](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Factorial.md)  
 - [Star](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Star.md)  
 
