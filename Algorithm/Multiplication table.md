@@ -42,4 +42,5 @@ public class gogodan {
 	
 }
 ```  
-![image](https://user-images.githubusercontent.com/67041069/87432143-90dfdf80-c622-11ea-9980-8ae74e32eef1.png)
+![image](https://user-images.githubusercontent.com/67041069/87432143-90dfdf80-c622-11ea-9980-8ae74e32eef1.png)   ![image](https://user-images.githubusercontent.com/67041069/87505806-c2998a80-c6a4-11ea-9d9f-465940a9c261.png)
+
