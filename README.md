@@ -25,6 +25,7 @@ I can do it
 - [List](https://github.com/Gyubin0302/Java_Study/blob/master/List.md)  
 - [File](https://github.com/Gyubin0302/Java_Study/blob/master/File.md)  
 - [Banking](https://github.com/Gyubin0302/Java_Study/tree/master/Banking)  
+- [equals() override](https://github.com/Gyubin0302/Java_Study/blob/master/equals()%20override.md)  
 
 
 # Web  
