@@ -24,9 +24,8 @@ public class Ascii {
 				i = 0;
 			}
 				
-		}
-	}  
-	
+		}  
+		  
 		int j = 0;
 		// 두번째 방법
 		for(char a = 'A'; a <= 'z'; a++) {
@@ -40,7 +39,7 @@ public class Ascii {
 			   j = 0;
 			}
 		}
-
+	}  
 }
 ```  
 ![image](https://user-images.githubusercontent.com/67041069/87432282-bff65100-c622-11ea-8487-a0f3d8111033.png)
