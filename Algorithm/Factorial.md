@@ -25,7 +25,7 @@ public class Factorial {
 			result *= i;
 		}
 		System.out.println("= "+result);  
-                for(int i = j; i <= 1; i--) {
+                for(int i = j; i >= 1; i--) {
                 if(i==1) {
                   System.out.print(1 + " ");
                 }else {
