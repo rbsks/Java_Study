@@ -23,7 +23,7 @@ public class Loans extends BankAccount{
 	protected void calc() {
 		int periodM = period * 12;
 
-		interest = price * (int)(interestRate/100) / periodM;
+		interest = (int)((price * (interestRate/100)) / periodM);
 		totalAmount = interest;
 		
 		
