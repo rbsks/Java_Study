@@ -27,19 +27,19 @@ public class Ascii {
 		}
 	}  
 	
-	int j = 0;
-	// 두번째 방법
-	for(char a = 'A'; a <= 'z'; a++) {
-		System.out.print(a);
-		if(++j%5 == 0) {
-		   System.out.println();
+		int j = 0;
+		// 두번째 방법
+		for(char a = 'A'; a <= 'z'; a++) {
+			System.out.print(a);
+			if(++j%5 == 0) {
+			   System.out.println();
+			}
+			if(a == 'Z') {
+			   System.out.println();
+			   a = 'a'-1;
+			   j = 0;
+			}
 		}
-		if(a == 'Z') {
-		   System.out.println();
-		   a = 'a'-1;
-		   j = 0;
-		}
-	}
 
 }
 ```  
