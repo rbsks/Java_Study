@@ -9,5 +9,26 @@
   - Setup.exe 실행  
   
 ![image](https://user-images.githubusercontent.com/67041069/87618251-6130f480-c754-11ea-9e4d-5686ea32f75d.png)  
-![image](https://user-images.githubusercontent.com/67041069/87618266-6beb8980-c754-11ea-8e02-bd053bc1364e.png)  
+![image](https://user-images.githubusercontent.com/67041069/87847574-5329d200-c914-11ea-9a27-0735a3d103c8.png)  
+  - check box check 해제  
+  
+![image](https://user-images.githubusercontent.com/67041069/87847584-69d02900-c914-11ea-96d8-e21587a802b0.png)  
+  - 다음  
+  
+![image](https://user-images.githubusercontent.com/67041069/87847593-79e80880-c914-11ea-93dd-fc6abdb0e988.png)  
+  - 다음 
+  
+![image](https://user-images.githubusercontent.com/67041069/87847606-9126f600-c914-11ea-9988-32e97d577eea.png)  
+  - 경로와 전역 데이터베이스 이름, 비밀번호 입력후 다음. 비밀번호 권장 표준을 따르지 않았다고 경고 메시지 뜨면은 예 누르고 넘어가기  
+  
+![image](https://user-images.githubusercontent.com/67041069/87847633-c29fc180-c914-11ea-8e3f-e026b27ab9d8.png)  
+  - 완료  
+
+![image](https://user-images.githubusercontent.com/67041069/87847643-d5b29180-c914-11ea-93c3-20a0b2a9b507.png)  
+  - 설치시작  
+  
+  
+
+
+
   
