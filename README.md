@@ -43,5 +43,7 @@ I can do it
 
 # Oracle
  - [Oracle install](https://github.com/Gyubin0302/Java_Study/blob/master/Oracle/Oracle%20install.md)  
+ - [SCOTT 계정 활성화](https://github.com/Gyubin0302/Java_Study/blob/master/Oracle/SCOTT%20%EA%B3%84%EC%A0%95%20%ED%99%9C%EC%84%B1%ED%99%94.md)  
+ 
  
 
