@@ -25,7 +25,12 @@
   - 완료  
 
 ![image](https://user-images.githubusercontent.com/67041069/87847643-d5b29180-c914-11ea-93c3-20a0b2a9b507.png)  
-  - 설치시작  
+![image](https://user-images.githubusercontent.com/67041069/87847854-0ba44580-c916-11ea-9eb5-53b34ccbb65a.png)  
+
+  - 설치시작   
+  
+![image](https://user-images.githubusercontent.com/67041069/87847880-31314f00-c916-11ea-969f-58fae19fa43d.png)  
+  - 성공!!
   
   
 
