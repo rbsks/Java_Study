@@ -18,7 +18,7 @@ public class CardinalConversion {
         int quotient = Integer.parseInt(br.readLine()); // 주어지는 수이자 나중에는 몫
         System.out.print("진법을 입력하세요 > ");
         int cardinalNum = Integer.parseInt(br.readLine()); // 변환하고자 하는 진법
-        String character = "0123456789ABCDEF";
+        String character = "0123456789ABCDEF"; // 나머지 값에 따라서 charAt으로 값을 뽑아서 ArrayList로 저장하기 위한 것
         ArrayList<Character> output = new ArrayList<>();
 
         while(quotient != 0) {
