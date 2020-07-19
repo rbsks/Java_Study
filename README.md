@@ -34,7 +34,7 @@ I can do it
 - [Create account](https://github.com/Gyubin0302/Java_Study/blob/master/html5/Create%20account.md)  
 
 # Algorithm  
-- [Sort](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Sort.md)  
+- [Sort](https://github.com/Gyubin0302/Java_Study/tree/master/Algorithm/Sort)  
 - [ACSII](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/ACSII.md)  
 - [Multiplication table](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Multiplication%20table.md)  
 - [Factorial](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Factorial.md)  
