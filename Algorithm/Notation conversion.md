@@ -41,4 +41,4 @@ public class CardinalConversion {
 }
 ```  
 #### 결과  
-![image](https://user-images.githubusercontent.com/67041069/87869901-85a00180-c9de-11ea-83c7-d63a6ae8522a.png)  ![image](https://user-images.githubusercontent.com/67041069/87869905-8cc70f80-c9de-11ea-9aa0-8a84f3b450f5.png)  ![image](https://user-images.githubusercontent.com/67041069/87869909-96507780-c9de-11ea-8264-3c17fad0256e.png)  ![image](https://user-images.githubusercontent.com/67041069/87869914-a0727600-c9de-11ea-9ae6-152c01a9f5c3.png)
+![image](https://user-images.githubusercontent.com/67041069/87869901-85a00180-c9de-11ea-83c7-d63a6ae8522a.png)  ![image](https://user-images.githubusercontent.com/67041069/87869905-8cc70f80-c9de-11ea-9aa0-8a84f3b450f5.png)  ![image](https://user-images.githubusercontent.com/67041069/87869909-96507780-c9de-11ea-8264-3c17fad0256e.png)  ![image](https://user-images.githubusercontent.com/67041069/87870020-40c89a80-c9df-11ea-9f61-96e84cd0c367.png)
