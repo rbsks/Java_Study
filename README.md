@@ -39,6 +39,7 @@ I can do it
 - [Multiplication table](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Multiplication%20table.md)  
 - [Factorial](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Factorial.md)  
 - [Star](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Star.md)  
+- [Notation conversion](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Notation%20conversion.md)  
 
 
 # Oracle
