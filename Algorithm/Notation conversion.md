@@ -42,3 +42,75 @@ public class CardinalConversion {
 ```  
 #### 결과  
 ![image](https://user-images.githubusercontent.com/67041069/87869901-85a00180-c9de-11ea-83c7-d63a6ae8522a.png)  ![image](https://user-images.githubusercontent.com/67041069/87869905-8cc70f80-c9de-11ea-9aa0-8a84f3b450f5.png)  ![image](https://user-images.githubusercontent.com/67041069/87870033-58a01e80-c9df-11ea-956b-cc317e49d175.png)  ![image](https://user-images.githubusercontent.com/67041069/87870020-40c89a80-c9df-11ea-9f61-96e84cd0c367.png)
+
+
+``` java  
+package com.bit.conv;
+
+public class Test {
+	
+	public static int binaryToDacemal(String num) {
+		int result = 0;
+		int count = 0;
+		int pow = 0;
+		for (int i = num.length(); i >= 0; i--) {
+			if (i == 0) {
+				break;
+			}
+			pow = (int) Math.pow(2, count);
+			result += pow * (num.charAt(i-1) -'0');
+			count++;
+		}
+		return result;
+	}
+	
+	public static int octToDacemal(String num) {
+		int result = 0;
+		int count = 0;
+		int pow = 0;
+		for (int i = num.length(); i >= 0; i--) {
+			if (i == 0) {
+				break;
+			}
+			pow = (int) Math.pow(8, count);
+			result += pow * (num.charAt(i-1) -'0');
+			count++;
+		}
+		return result;
+	}
+	
+	public static int hexToDacemal(String num) {
+		int result = 0;
+		int count = 0;
+		int pow = 0;
+		
+		for (int i = num.length(); i >= 0; i--) {
+			if (i == 0) {
+				break;
+			}
+			char ch = num.charAt(i-1);
+			pow = (int) Math.pow(16, count);
+			if(ch > 64 && ch < 71) {
+				result += pow * (ch -55);
+			}else {
+				result += pow * (ch -'0');
+			}
+			count++;
+		}
+		
+		return result;
+	}
+	
+	
+	public static void main(String[] args) {
+		System.out.println(binaryToDacemal("01100100"));
+		System.out.println(octToDacemal("144"));
+		System.out.println(hexToDacemal("64"));
+		
+	}
+	
+	
+}
+```  
+#### 결과  
+![image](https://user-images.githubusercontent.com/67041069/87942178-296cd880-cad7-11ea-94c7-a4d3433f3216.png)  
