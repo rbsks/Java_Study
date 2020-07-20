@@ -107,9 +107,9 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		System.out.println(binaryToDacemal("01100100"));
-		System.out.println(octToDacemal("144"));
-		System.out.println(hexToDacemal("64"));
+		System.out.println("2진 -> 10진 : " + binaryToDacemal("001010111100"));
+		System.out.println("8진 -> 10진 : " + octToDacemal("1274"));
+		System.out.println("16진 -> 10진 : " + hexToDacemal("2BC"));
 		
 	}
 	
