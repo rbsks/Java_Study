@@ -49,7 +49,8 @@ public class CardinalConversion {
 package com.bit.conv;
 
 public class Test {
-	
+
+	// 2진 -> 10진
 	public static int binaryToDacemal(String num) {
 		int result = 0;
 		int count = 0;
@@ -65,6 +66,7 @@ public class Test {
 		return result;
 	}
 	
+	// 8진 -> 10진
 	public static int octToDacemal(String num) {
 		int result = 0;
 		int count = 0;
@@ -80,6 +82,7 @@ public class Test {
 		return result;
 	}
 	
+	// 16진 ->10진
 	public static int hexToDacemal(String num) {
 		int result = 0;
 		int count = 0;
