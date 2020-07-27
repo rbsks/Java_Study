@@ -5,7 +5,7 @@ I can do it
 
 ------------------------------------------------------------------  
 ■ Java
-- [java](https://github.com/Gyubin0302/Java_Study/tree/master/java)    
+- [java base](https://github.com/Gyubin0302/Java_Study/tree/master/java)    
 
 # Web  
 - [Create account](https://github.com/Gyubin0302/Java_Study/blob/master/Web/Create%20account.md)  
