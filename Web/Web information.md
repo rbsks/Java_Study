@@ -6,5 +6,5 @@
 ### src : 프로그램 원본(source code)을 저장하는 폴더  
 ### classes : src에 포함되어 있는 ~~.java파일을 컴파일한 ~~.class들을 모아 두는 곳이다. 대체로 src와 classes는 동일한 구조를 갖는다  
 ### lib : 현재 웹 어플리케이션에서 필요한 jar 파일을 저장하는 폴더  
-### tlds(Tag Library Descriptor) : 사용자가 만든 tag 파일의 확장자가 tld 이다  \
+### tlds(Tag Library Descriptor) : 사용자가 만든 tag 파일의 확장자가 tld 이다  
 ### tags : tld와 마찬가지로 사용자가 정의 tag들의 집합체로 tag들 중 가장 간단하고 쉽게 만들 수 있는 tag의 확장자이다  
