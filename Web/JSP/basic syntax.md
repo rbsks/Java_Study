@@ -7,6 +7,6 @@
     - taglib 지시어 : <%@taglib %>  
   - jsp page scripting elements  
     - scriptlet : <% %>  
-    - 표현식(expression) : <%= %> , 가장 중요!!
-    - 선언(declaration) : <%! %>  
+    - 표현식(expression) : <%= %>, 가장 중요!! 요즘에는 대신에 el($)tag를 씀. systemp.out.print와 같다
+    - 선언(declaration) : <%! %>, java로 따지면 static선언한거랑 비슷
   
