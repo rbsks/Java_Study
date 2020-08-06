@@ -30,6 +30,6 @@ I can do it
  - [Banking JDBC](https://github.com/Gyubin0302/Java_Study/tree/master/JDBC/Banking%20JDBC)  
  
 #Spring
- - [Spring&myBatis](https://github.com/Gyubin0302/Java_Study/tree/master/Spring)  
+ - [Spring&myBatis](https://github.com/Gyubin0302/Java_Study/tree/master/Spring/Spring%26myBatis)  
  
 
