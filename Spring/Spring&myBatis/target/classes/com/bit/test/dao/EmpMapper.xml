@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mpper namespace="com.bit.test.dao.EmpDao">
+
+	<resultMap type="com.bit.test.domain.Emp" id="emp">
+	
+		<result property="empno" column="empno" javaType="int"/>
+		<result property="ename" column="ename" javaType="string"/>
+		<result property="job" column="job" javaType="string"/>
+		<result property="mgr" column="mgr" javaType="int"/>
+		<result property="hiredate" column="hiredate" javaType="java.sql.Date" jdbcType="DATE"/>
+		<result property="sal" column="sal" javaType="double"/>
+		<result property="comm" column="comm" javaType="double"/>
+		<result property="deptno" column="deptno" javaType="int"/>
+		
+	</resultMap>
+
+</mpper>
+
+
+<select id="getAllEmps" resultType="Emp">select *from emp</select>
