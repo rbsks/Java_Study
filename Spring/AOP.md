@@ -53,3 +53,15 @@
     - 스프링 API를 이용한 AOP구현  
     - XML 기반의 POJO 클래스를 이용한 AOP구현  
     - AspectJ 5/6에서 정의한 @Aspect 아노테이션 기반의 AOP구현  
+  - 스프링에서 AOP를 구현하는 과정   
+    - Advice 클래스를 작성한다   
+    - 설정 파일에 Pointcut을 설정한다  
+    - 설정 파일에 Advice와 Pointcut을 묶어 놓는 Advisor를 설정한다  
+    - 설정 파일에 ProxyFactoryBean 클래스를 이용하여 대상 객체에 Advisor를 적용한다  
+    - getBean() 메서드로 빈 객체(프록시 객체)를 가져와 사용한다  
+    
+  - 스프링 AOP는 메서드 호출 관련 Advice만 제공하며 이들 Advice는 인터페이 스형태로 제공된다  
+    - MethodBeforeAdvice : 대상 객체의 메서드를 실행하기 전에 공통기능을 실행할 때 사용되는 Advice  
+    - AfterReturningAdvice : 대상 객체의 메서드 실행 이후에 공통기능을 실행할 때 사용되는 Advice  
+    - ThrowsAdvice : 대상 객체의 메서드가 실행하는 도중 예외가 발생할 경우 공통기능을 실 행할 때 사용되는 Advice  
+    - MethodInterceptor : 위 세가지를 하나로 묶은 Advice로 메서드 실행 전, 후, 예외 발생시 공통 기능을 실행할 수 있다  
