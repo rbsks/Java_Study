@@ -15,7 +15,7 @@
     - 같은 타입의 빈 객체들이 있을 경우 특정 빈을 사용하도록 함  
     - 설정파일의 <qualifier>태그의 value 속성의 값을 아노테이션 값으로 사용  
     - &#60;bean id="foo" class="x.y.Foo"&#62;  
-    - <qualifier value="action"/>  
+    - &#60;qualifier value="action"/&#62;  
     - @Qualifier("action")  
     - public void setFoo(@Qualifier("action") Foo foo){}  
   
@@ -30,9 +30,9 @@
     - javax.annotation.PostConstruct, javax.annotation.PreDestroy;  
     - lifecycle 아노테이션  
   
-  - <context:component-scan>   
+  - &#60;context:component-scan&#62;   
     - xml 설정파일에 여러 빈 정보를 추가하지 않고 특정한 클래스를 빈으로 등록 가능  
-    - <context:component-scan base-package:"패키지명"/>  
+    - &#60;context:component-scan base-package:"패키지명"/&#62;  
     - 스프링 2.0 이후  
       - @Repository  
     - 스프링 2.5 이후  
