@@ -19,11 +19,11 @@
     - @Qualifier("action")  
     - public void setFoo(@Qualifier("action") Foo foo){}  
   
-  - @Resource  
-   - javax.annotation.Resource  
-   - Java SE 6 과 Java EE5에 추가  
-   - 필요한 자원을 자동으로 연결시켜 줌  
-   - name 속성을 이용하면 속성과 이름이 틀릴 때 사용  
+  - @Resource    
+    - javax.annotation.Resource  
+    - Java SE 6 과 Java EE5에 추가  
+    - 필요한 자원을 자동으로 연결시켜 줌  
+    - name 속성을 이용하면 속성과 이름이 틀릴 때 사용  
       - @Resource(name="myFoo")  
     
   - @PostConstruct, @PreDestroy  
