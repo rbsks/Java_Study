@@ -14,7 +14,7 @@
     - @Autowired 와 같이 사용  
     - 같은 타입의 빈 객체들이 있을 경우 특정 빈을 사용하도록 함  
     - 설정파일의 <qualifier>태그의 value 속성의 값을 아노테이션 값으로 사용  
-    - <bean id="foo" class="x.y.Foo">  
+    - &#60;bean id="foo" class="x.y.Foo"&#62;  
     - <qualifier value="action"/>  
     - @Qualifier("action")  
     - public void setFoo(@Qualifier("action") Foo foo){}  
