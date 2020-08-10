@@ -6,7 +6,7 @@
   
   - @Autowired  
     - org.springframework.beans.factory.annotation.Autowired  
-    - 속성,􀀎생성자,􀀎setter메서드  
+    - 속성, 생성자, setter메서드  
     - 타입에 의존하는 객체를 삽입해 줌  
     
   - @Qualifier  
@@ -14,28 +14,28 @@
     - @Autowired 와 같이 사용  
     - 같은 타입의 빈 객체들이 있을 경우 특정 빈을 사용하도록 함  
     - 설정파일의 <qualifier>태그의 value􀀎속성의 값을 아노테이션 값으로 사용  
-    - <bean􀀎id="foo"􀀎class="x.y.Foo">  
-    - <qualifier􀀎value="action"/>  
+    - <bean id="foo" class="x.y.Foo">  
+    - <qualifier value="action"/>  
     - @Qualifier("action")  
-    - public􀀎void􀀎setFoo(@Qualifier("action")􀀎Foo foo)􀀎{}  
+    - public void setFoo(@Qualifier("action") Foo foo){}  
   
   - @Resource  
    - javax.annotation.Resource  
-   - Java􀀎SE􀀎6􀀎과 Java􀀎EE5에 추가  
+   - Java SE 6 과 Java EE5에 추가  
    - 필요한 자원을 자동으로 연결시켜 줌  
-   - name􀀎속성을 이용하면 속성과 이름이 틀릴 때 사용  
+   - name 속성을 이용하면 속성과 이름이 틀릴 때 사용  
       - @Resource(name="myFoo")  
     
-  - @PostConstruct,􀀎@PreDestroy  
-    - javax.annotation.PostConstruct,􀀎javax.annotation.PreDestroy;  
-    - lifecycle􀀎아노테이션  
+  - @PostConstruct, @PreDestroy  
+    - javax.annotation.PostConstruct, javax.annotation.PreDestroy;  
+    - lifecycle 아노테이션  
   
-  - <context:component-scan>의 대상  
+  - #<context:component-scan>의 대상  
     - xml􀀎설정파일에 여러 빈 정보를 추가하지 않고 특정한 클래스를 빈으로 등록 가능  
     - <context:component-scan􀀎base-package:"com.abc.prj"/>  
-    - 스프링 2.0􀀎이후  
+    - 스프링 2.0 이후  
       - @Repository  
-    - 스프링 2.5􀀎이후  
+    - 스프링 2.5 이후  
       - @Component  
         - org.springframework.stereotype.Component  
         - 자동으로 빈으로 등록되게 함  
