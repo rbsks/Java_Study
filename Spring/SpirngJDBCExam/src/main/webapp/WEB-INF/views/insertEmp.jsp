@@ -21,14 +21,14 @@
 		</tr>
 
 		<tr>
-			<td>${insertEmp.empno }</td>
-			<td>${insertEmp.ename }</td>
-			<td>${insertEmp.job }</td>
-			<td>${insertEmp.mgr }</td>
-			<td>${insertEmp.hiredate }</td>
-			<td>${insertEmp.sal }</td>
-			<td>${insertEmp.comm }</td>
-			<td>${insertEmp.deptno }</td>
+			<td>${emp.empno }</td>
+			<td>${emp.ename }</td>
+			<td>${emp.job }</td>
+			<td>${emp.mgr }</td>
+			<td>${emp.hiredate}</td>
+			<td>${emp.sal }</td>
+			<td>${emp.comm }</td>
+			<td>${emp.deptno }</td>
 		</tr>
 
 	</table>
