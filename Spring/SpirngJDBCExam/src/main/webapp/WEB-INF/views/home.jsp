@@ -33,25 +33,25 @@
 	</form>
 	
 	<h3>사원 입력</h3>
-	<form action="/insertEmp" method="get" >
+	<form action="/insertEmp" method="get" enctype="multipart/form-data" >
 		<label for="empno">EMPNO: </label>
-		<input type="number" id="empno" name="empno"><br>
+		<input type="number" id="empno" name="empno" value="${emp.empno }"><br>
 		<label for="ename">ENAME: </label>
-		<input type="text" id="ename" name="ename"><br>
+		<input type="text" id="ename" name="ename" value="${emp.ename }"><br>
 		<label for="job">JOB: </label>
-		<input type="text" id="job" name="job"><br>
+		<input type="text" id="job" name="job" value="${emp.job }"><br>
 		<label for="mgr">MGR: </label>
-		<input type="number" id="mgr" name="mgr"><br>
+		<input type="number" id="mgr" name="mgr" value="${emp.mgr }"><br>
 		<label for="hiredate">HIREDATE: </label>
-		<input type="date" id="hiredate" name="hiredate"><br>
+		<input type="date" id="hiredate" name="hiredate" value="${emp.hiredate}"><br>
 		<label for="sal">SAL: </label>
-		<input type="number" id="sal" name="sal"><br>
+		<input type="number" id="sal" name="sal" value="${emp.sal }"><br>
 		<label for="comm">COMM: </label>
-		<input type="number" id="comm" name="comm"><br>
+		<input type="number" id="comm" name="comm" value="${emp.comm }"><br>
 		<label for="deptno">DEPTNO: </label>
-		<input type="number" id="deptno" name="deptno"><br>
+		<input type="number" id="deptno" name="deptno" value="${emp.deptno }"><br>
 		<input type="submit" value="Go~~!!"><br><br>
-	</form>
+	</form> 
 	
 	<h3>사원 정보 수정</h3>
 	<form action="/updateEmp" method="get" >
