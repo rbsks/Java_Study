@@ -46,6 +46,7 @@ public class EmpController {
 		return "getAllEmpno";
 	}
 	
+	/*
 	@RequestMapping(value = "insertEmp", method = RequestMethod.GET)
 	public String insertEmp( Model model, HttpServletRequest request) {
 		Emp emp = new Emp();
@@ -62,6 +63,16 @@ public class EmpController {
 		empService.insertEmp(emp);
 		model.addAttribute("insertEmp", emp);
 		return "insertEmp";
+	}*/
+	
+	@RequestMapping(value = "insertEmp", method = RequestMethod.GET)
+	public String insertEmp(@ModelAttribute("emp") Emp emp, BindingResult result, String hiredate, Model model) {
+		Date d = Date.valueOf(hiredate);
+		emp.setHiredate(d);
+		empService.insertEmp(emp);
+		model.addAttribute("emp",emp);
+		return "insertEmp";
+		
 	}
 	
 	@RequestMapping(value = "updateEmp", method = RequestMethod.GET)
