@@ -6,7 +6,7 @@ I can do it
 ------------------------------------------------------------------  
 
 # 참고 사이트  
-- [oakHouse] (http://oakhouse.gitbook.io/materials/greater-than-lambda/what-is-lambda)    
+- [oakHouse](http://oakhouse.gitbook.io/materials/greater-than-lambda/what-is-lambda)    
 
 ■ Java
 - [java base](https://github.com/Gyubin0302/Java_Study/tree/master/java)    
