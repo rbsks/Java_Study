@@ -4,6 +4,8 @@ Java Study 일지
 I can do it  
 
 ------------------------------------------------------------------  
+# Mini project  
+- [mini project](https://github.com/Gyubin0302/Java_Study/tree/master/mini%20project/MiniProject)  
 
 # 참고 사이트  
 - [oakHouse](http://oakhouse.gitbook.io/materials/greater-than-lambda/what-is-lambda)    
