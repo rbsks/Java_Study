@@ -3,6 +3,7 @@ package com.team.three.controller;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -37,15 +38,47 @@ public class PostMainController {
 	}
 	
 	@RequestMapping(value="postlist", method = RequestMethod.GET)
-	public String searchPostAll(Model model) {
+	public String searchPostAll(Model model, HttpServletRequest request) {
 		List<Post> post = postService.callSearchPostAll();
-		System.out.println(post);
-		model.addAttribute("postAll", post);
+		List<Post> postlist = new ArrayList<Post>();
+		int getpageNo = 0;
+		int pageList = 0;
+		int endPageList = 0;
+		int j = 0;
+		int pageNoview = (int)Math.ceil((double)post.size()/10);
+		
+		
+		if(request.getParameter("page") == null) {
+			getpageNo = 1;
+		}else {
+			getpageNo = Integer.parseInt(request.getParameter("page"));
+		}
+		
+		pageList = 10 * getpageNo;
+
+		
+		if(pageList < post.size()) {
+			endPageList = pageList;
+		}else {
+			endPageList = post.size();
+		} // 마지막 페이지 사이즈 맞춤
+		
+		for(int i = pageList - 10; i < endPageList;  i++) {
+			 postlist.add(j, post.get(i));
+			 j++;
+		}
+		int startPage = Math.max(1, getpageNo - 4);
+		int endPage = Math.min(pageNoview, getpageNo+4);
+		model.addAttribute("postAll", postlist);
+		model.addAttribute("startPage", startPage);
+		model.addAttribute("endtPage", endPage);
+		model.addAttribute("pageNo", pageNoview);
+		model.addAttribute("getPageNo", getpageNo);
 		return "post";
 	}
 	
 	
-	@GetMapping("post")
+	@GetMapping("posta")
 	public String callanswer(Model model, @Param("post")Post post, HttpServletRequest request) {
 //		int post_No = Integer.parseInt(request.getParameter("post_No"));
 //		String title = request.getParameter("title");
