@@ -20,22 +20,21 @@
 	href="http://free-admin-dashboard.bootstrapadmintemplate.com/unique-lite/main/css/master_style.css">
 <link rel="stylesheet"
 	href="http://free-admin-dashboard.bootstrapadmintemplate.com/unique-lite/main/css/skins/_all-skins.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <title>Insert title here</title>
 </head>
+<body>
+<body class="hold-transition skin-blue sidebar-mini">
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
 		<header class="main-header">
 			<!-- Logo -->
 			<a href="../index.html" class="logo"> <!-- mini logo for sidebar mini 50x50 pixels -->
-				<b class="logo-mini"> <span class="light-logo"><img
-						src="../../images/logo-light.png" alt="logo"></span> <span
-					class="dark-logo"><img src="../../images/logo-dark.png"
-						alt="logo"></span>
+				<b class="logo-mini"> <span class="light-logo"> </span> <span
+					class="dark-logo"></span>
 			</b> <!-- logo for regular state and mobile devices --> <span
-				class="logo-lg"> <img src="../../images/logo-light-text.png"
-					alt="logo" class="light-logo"> <img
-					src="../../images/logo-dark-text.png" alt="logo" class="dark-logo">
-			</span>
+				class="logo-lg"> </span>
 			</a>
 
 			<!-- Sidebar toggle button-->
@@ -51,29 +50,26 @@
 				<!-- Sidebar user panel -->
 				<div class="user-panel">
 					<div class="ulogo">
-						<a href="../index.html"> <!-- logo for regular state and mobile devices -->
-							<span><b>Unique </b>Admin</span>
-						</a>
+						<!-- <a href="../index.html"> logo for regular state and mobile devices -->
+						<span><b>Unique </b>Admin</span> </a>
 					</div>
 					<div class="image">
-						<img src="../../images/user2-160x160.jpg" class="rounded-circle"
-							alt="User Image">
+						<!-- <img src="../../images/user2-160x160.jpg" class="rounded-circle"
+							alt="User Image"> -->
 					</div>
 					<div class="info">
 						<p>Admin Template</p>
-						<a href="" class="link" data-toggle="tooltip" title=""
-							data-original-title="Settings"><i class="ion ion-gear-b"></i></a>
-						<a href="" class="link" data-toggle="tooltip" title=""
+						<a title="" data-original-title="Settings"><i
+							class="ion ion-gear-b"></i></a> <a title=""
 							data-original-title="Email"><i class="ion ion-android-mail"></i></a>
-						<a href="" class="link" data-toggle="tooltip" title=""
-							data-original-title="Logout"><i class="ion ion-power"></i></a>
+						<a title="" data-original-title="Logout"><i
+							class="ion ion-power"></i></a>
 					</div>
 				</div>
 				<!-- sidebar menu -->
 				<ul class="sidebar-menu" data-widget="tree">
 					<li class="nav-devider"></li>
-					<li><a href="../index.html"> <i class="fa fa-th-list"></i>
-							<span>Dashboard</span>
+					<li><a th:href="@{/}"> <i class="fa fa-th-list"></i> <span>Dashboard</span>
 					</a></li>
 
 					<li><a href="chart.html"> <i class="fa fa-bar-chart-o"></i>
@@ -95,7 +91,7 @@
 					</a></li>
 
 					<li class="active"><a th:href="@{/postlist}"> <i
-							class="fa fa-table"></i> <span>Post</span>
+							class="fa fa-table"></i> <span>Post</span> <!-- onclick="fetchPage('postlist')" -->
 					</a></li>
 
 					<li><a href="form-elements.html"> <i class="fa fa-file"></i>
@@ -148,8 +144,8 @@
 								</div>
 							</div>
 
-							<!-- /.box-header -->
 							<div class="box-body no-padding">
+								<!-- id="post"  -->
 								<div class="table-responsive">
 									<table class="table table-hover">
 										<tr>
@@ -160,26 +156,50 @@
 											<th>댓글수</th>
 											<th>좋아요</th>
 										</tr>
+
 										<tr th:each="post : ${postAll}">
-											<td th:text="${post.post_No}"><a href="javascript:void(0)"></a></td>
+											<td th:text="${post.post_No}"><a
+												href="javascript:void(0)"></a></td>
 											<td th:if="${post.re_No}=='0'" th:text="${post.title}"></td>
 											<td th:if="${post.re_No}=='1'" th:text="'RE:'+${post.title}"></td>
-											<td th:if="${post.re_No}=='2'" th:text="|&nbsp;&nbsp;&nbsp;&nbsp;RE:RE: ${post.title}|"></td>
+											<td th:if="${post.re_No}=='2'"
+												th:text="|&nbsp;&nbsp;&nbsp;&nbsp;RE:RE: ${post.title}|"></td>
 											<td th:text="${post.nickName}"><span class="text-muted"><i
 													class="fa fa-clock-o"></i></span></td>
 											<td th:text="${#dates.format(post.write_Date, 'yyyy-MM-dd')}"></td>
 											<td><span class="label label-danger">Pending</span></td>
 											<td>CH</td>
-										</tr>	
-										<tr>
-											<td onClick="location.href='Write'" class="btn btn-block btn-default- btn-lg">글쓰기</td>
-										</tr>			
+										</tr>
 									</table>
 								</div>
+								<div class="box">
+									<div class="box-header with-border">
+										<button type="button" onClick="location.href='Write'"
+											style="width: 50; height: 50;">글쓰기</button>
+									 
+										<div aria-label="Page navigation example">
+											<ul class="pagination justify-content-center">
+												<li class="page-item" th:class="${1 == getPageNo} ? 'disabled'">
+													<a class="page-link" href="#" th:href="@{/postlist(page=${getPageNo -1})}" tabindex="-1" aria-disabled="true">Previous</a>
+												</li>
+												
+												<li class="page-item" th:classappend="${page == getPageNo } ? 'disabled'" th:each="page : ${#numbers.sequence(startPage,endtPage)}">
+													<a class="page-link" href="#" th:text="${page}" th:href="@{/postlist(page=${page})}"></a>
+												</li>
+												
+												<li class="page-item" th:classappend="${pageNo == getPageNo} ? 'disabled'">
+													<a class="page-link" href="#" th:href="@{/postlist(page=${getPageNo +1})}"> Next</a>
+												</li>
+											</ul>
+										</div> 
+									</div> 
+						
+								</div>
+								
 							</div>
-							<!-- /.box-body -->
 						</div>
 						<!-- /.box -->
+
 					</div>
 				</div>
 			</section>
@@ -204,7 +224,7 @@
 		</footer>
 
 	</div>
-	
 	<!-- ./wrapper -->
+
 </body>
 </html>
