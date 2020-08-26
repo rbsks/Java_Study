@@ -152,7 +152,7 @@
 											<th>글번호</th>
 											<th>제목</th>
 											<th>작성자</th>
-											<th>작성일</th>
+											<th>작성일</th> 
 											<th>댓글수</th>
 											<th>좋아요</th>
 										</tr>
@@ -160,10 +160,9 @@
 										<tr th:each="post : ${postAll}">
 											<td th:text="${post.post_No}"><a
 												href="javascript:void(0)"></a></td>
-											<td th:if="${post.re_No}=='0'" th:text="${post.title}"></td>
-											<td th:if="${post.re_No}=='1'" th:text="'RE:'+${post.title}"></td>
-											<td th:if="${post.re_No}=='2'"
-												th:text="|&nbsp;&nbsp;&nbsp;&nbsp;RE:RE: ${post.title}|"></td>
+											<td th:if="${post.re_No}=='0'" ><a th:href="@{/postdetail(post_No=${post.post_No})}" th:text="${post.title}"></a></td>
+											<td th:if="${post.re_No}=='1'" ><a th:href="@{/postdetail(post_No=${post.post_No})}" th:text="'RE:'+${post.title}"></a></td>
+											<td th:if="${post.re_No}=='2'" ><a th:href="@{/postdetail(post_No=${post.post_No})}" th:text="|&nbsp;&nbsp;&nbsp;&nbsp;RE:RE: ${post.title}|"></a></td>
 											<td th:text="${post.nickName}"><span class="text-muted"><i
 													class="fa fa-clock-o"></i></span></td>
 											<td th:text="${#dates.format(post.write_Date, 'yyyy-MM-dd')}"></td>
