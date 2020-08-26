@@ -32,10 +32,17 @@ public class PostMainController {
 	private LikeService likeService;
 	
 	@GetMapping("Write")
-	public String home() {
+	public String write() {
 		return "Write";
 		
 	}
+	
+	@GetMapping("Answer")
+	public String answer() {
+		return "Answer";
+		
+	}
+	
 	
 	@RequestMapping(value="postlist", method = RequestMethod.GET)
 	public String searchPostAll(Model model, HttpServletRequest request) {
@@ -78,22 +85,36 @@ public class PostMainController {
 	}
 	
 	
-	@GetMapping("posta")
-	public String callanswer(Model model, @Param("post")Post post, HttpServletRequest request) {
-//		int post_No = Integer.parseInt(request.getParameter("post_No"));
-//		String title = request.getParameter("title");
-//		String contents = request.getParameter("contents");
-//		String nickName = request.getParameter("nickName");
-		post.setNickName("인스타"); 
-		post.setCategory("공지사항");
-		post.setTitle("test");
-		post.setContents("인스타");
-		post.setPost_No(30);
-		postService.callanswerUpdate(post.getPost_No());
+	@GetMapping("postanswer")
+	public String callanswer(Model model, Post post, HttpServletRequest request) {
+		int post_No = Integer.parseInt(request.getParameter("post_No"));
+		post.setPost_No(post_No);
+		Post postAnswer = postService.callSearchPostByPost(post);
+		
+		post.setNickName("sss"); 
+		post.setCategory(postAnswer.getCategory());
+		post.setTitle(request.getParameter("title"));
+		post.setContents(request.getParameter("contents"));
+		post.setPost_No(postAnswer.getPost_No());
+		
+		postService.callanswerUpdate(post_No);
 		postService.callanswerInsert(post);
+		System.out.println(post.getPost_No());
 		List<Post> postlist = postService.callSearchPostAll();
 		model.addAttribute("postAll", postlist);
-		return "post";
+		return "index";
+	}
+	
+	@GetMapping("postdetail")
+	public String searchPostById(Model model, Post post, HttpServletRequest request) {
+		int post_No = Integer.parseInt(request.getParameter("post_No"));
+		post.setPost_No(post_No);
+		Post postDetail = postService.callSearchPostByPost(post);
+//		likeService.callSearchLikeAll();
+		System.out.println(postDetail);
+		model.addAttribute("detail", postDetail);
+		
+		return "postdetail";
 	}
 	
 	
