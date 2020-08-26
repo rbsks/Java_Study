@@ -19,5 +19,9 @@
 		INSERT INTO POST(POST_NO, CATEGORY, TITLE, NICKNAME, WRITE_DATE, UPDATE_DATE, CONTENTS, STEP, DEPTH, RE_NO) 
 		VALUES(POST_PLUS.NEXTVAL, #{category}, #{title}, #{nickName}, sysdate, sysdate, #{contents},( SELECT STEP FROM POST WHERE POST_NO = #{post_No}), (SELECT DEPTH FROM POST WHERE POST_NO = #{post_No})+1,(SELECT RE_NO FROM POST WHERE POST_NO = #{post_No})+1) 
 	</insert>
+	
+	<select id="searchPostByPost" resultType="Post" parameterType="int">
+		select POST_NO, CATEGORY, TITLE, NICKNAME, WRITE_DATE, UPDATE_DATE, CONTENTS, STEP, DEPTH, RE_NO FROM POST WHERE POST_NO = #{post_No}	
+	</select>
 
 </mapper>
