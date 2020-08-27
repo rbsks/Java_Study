@@ -26,7 +26,7 @@ I can do it
 - [Star](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Star.md)  
 - [Notation conversion](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Notation%20conversion.md)  
 
-# JavaScript
+# JavaScript  
 -[JS Exam](https://github.com/Gyubin0302/Java_Study/tree/master/JS/JavaScriptExam/WebContent)  
 
 
