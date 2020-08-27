@@ -27,7 +27,7 @@ I can do it
 - [Notation conversion](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Notation%20conversion.md)  
 
 # JavaScript  
--[JS Exam](https://github.com/Gyubin0302/Java_Study/tree/master/JS/JavaScriptExam/WebContent)  
+- [JS Exam](https://github.com/Gyubin0302/Java_Study/tree/master/JS/JavaScriptExam/WebContent)  
 
 
 # Oracle
