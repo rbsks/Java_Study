@@ -24,27 +24,20 @@ import com.team.three.model.dto.Post;
 
 @Controller
 public class PostMainController {
-	
+
 	@Autowired
 	private PostService postService;
-	
+
 	@Autowired
 	private LikeService likeService;
-	
+
 	@GetMapping("Write")
 	public String write() {
 		return "Write";
-		
+
 	}
-	
-	@GetMapping("Answer")
-	public String answer() {
-		return "Answer";
-		
-	}
-	
-	
-	@RequestMapping(value="postlist", method = RequestMethod.GET)
+
+	@RequestMapping(value = "postlist", method = RequestMethod.GET)
 	public String searchPostAll(Model model, HttpServletRequest request) {
 		List<Post> post = postService.callSearchPostAll();
 		List<Post> postlist = new ArrayList<Post>();
@@ -52,30 +45,28 @@ public class PostMainController {
 		int pageList = 0;
 		int endPageList = 0;
 		int j = 0;
-		int pageNoview = (int)Math.ceil((double)post.size()/10);
-		
-		
-		if(request.getParameter("page") == null) {
+		int pageNoview = (int) Math.ceil((double) post.size() / 10);
+
+		if (request.getParameter("page") == null) {
 			getpageNo = 1;
-		}else {
+		} else {
 			getpageNo = Integer.parseInt(request.getParameter("page"));
 		}
-		
+
 		pageList = 10 * getpageNo;
 
-		
-		if(pageList < post.size()) {
+		if (pageList < post.size()) {
 			endPageList = pageList;
-		}else {
+		} else {
 			endPageList = post.size();
 		} // 마지막 페이지 사이즈 맞춤
-		
-		for(int i = pageList - 10; i < endPageList;  i++) {
-			 postlist.add(j, post.get(i));
-			 j++;
+
+		for (int i = pageList - 10; i < endPageList; i++) {
+			postlist.add(j, post.get(i));
+			j++;
 		}
 		int startPage = Math.max(1, getpageNo - 4);
-		int endPage = Math.min(pageNoview, getpageNo+4);
+		int endPage = Math.min(pageNoview, getpageNo + 4);
 		model.addAttribute("postAll", postlist);
 		model.addAttribute("startPage", startPage);
 		model.addAttribute("endtPage", endPage);
@@ -83,28 +74,34 @@ public class PostMainController {
 		model.addAttribute("getPageNo", getpageNo);
 		return "post";
 	}
-	
-	
+
+	@GetMapping("Answersub")
+	public String callAswer(Model model, HttpServletRequest request) {
+		int post_No = Integer.parseInt(request.getParameter("post_No"));
+		System.out.println(post_No);
+
+		model.addAttribute("post_No", post_No);
+		return "Answer";
+	}
+
 	@GetMapping("postanswer")
 	public String callanswer(Model model, Post post, HttpServletRequest request) {
 		int post_No = Integer.parseInt(request.getParameter("post_No"));
 		post.setPost_No(post_No);
 		Post postAnswer = postService.callSearchPostByPost(post);
-		
-		post.setNickName("sss"); 
+
+		post.setNickName("sss");
 		post.setCategory(postAnswer.getCategory());
 		post.setTitle(request.getParameter("title"));
 		post.setContents(request.getParameter("contents"));
 		post.setPost_No(postAnswer.getPost_No());
-		
+		System.out.println(post);
 		postService.callanswerUpdate(post_No);
 		postService.callanswerInsert(post);
-		System.out.println(post.getPost_No());
-		List<Post> postlist = postService.callSearchPostAll();
-		model.addAttribute("postAll", postlist);
-		return "index";
+
+		return "redirect:postlist";
 	}
-	
+
 	@GetMapping("postdetail")
 	public String searchPostById(Model model, Post post, HttpServletRequest request) {
 		int post_No = Integer.parseInt(request.getParameter("post_No"));
@@ -113,10 +110,8 @@ public class PostMainController {
 //		likeService.callSearchLikeAll();
 		System.out.println(postDetail);
 		model.addAttribute("detail", postDetail);
-		
+
 		return "postdetail";
 	}
-	
-	
-	
+
 }
