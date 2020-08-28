@@ -35,16 +35,11 @@
 			<th colspan="6" th:text="${detail.contents}">내용</th>
 		</tr>
 		<tr>
-			<td colspan="6" style="text-align: right;"> <a th:href="@{/Answer(post_No=${detail.post_No})}">답글</a></td>
+			<td colspan="6" style="text-align: right;"> <a th:href="@{/Answersub(post_No=${detail.post_No})}">답글</a></td>
 		</tr>
 	
 		
 	</table>
-	<script>
-		var post_No = [[${detail}]]
-		location.href="Answer.html?"+post_No
-	</script>
-	
 
 </body>
 </html>
