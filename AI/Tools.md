@@ -8,4 +8,17 @@
     NumPy의 핵심 기능은 다차원(n-차원) 배열인 ndarray 클래스입니다.   
     이 배열의 모든 원소는 동일한 데이터 타입이어야 합니다.  
     
-    ![image](https://user-images.githubusercontent.com/67041069/91690931-b8264800-eba1-11ea-8d9d-349eac6491cd.png)
+    ![image](https://user-images.githubusercontent.com/67041069/91690931-b8264800-eba1-11ea-8d9d-349eac6491cd.png)  
+    
+### Pandas  
+  - pandas는 데이터 처리와 분석을 위한 파이썬 라이브러리.    
+  - R의 data.frame을 본떠서 설계한 DataFrame이라는 데이터 구조를 기반으로 만들어졌다.  
+    간단하게 말하면 pandas의 DataFrame은 엑셀의 스프레드시트와 비슷한 테이블 형태라고 할 수 있다.   
+    pandas는 이 테이블을 수정하고 조작하는 다양한 기능을 제공한다.  
+  - 특히, SQL처럼 테이블에 쿼리나 조인을 수행할 수 있다.    
+  - 전체 배열의 원소가 동일한 타입이어야 하는 NumPy와는 달리 pandas는 각 열의 타입이 달라도  
+    다(예를 들면 정수, 날짜, 부동소숫점, 문자열). SQL, 엑셀 파일, CSV 파일 같은 다양한 파일과   
+    데이터베이스에서 데이터를 읽어 들일 수 있는 것이 pandas가 제공하는 또 하나의 유용한 기능이다.  
+    
+    ![image](https://user-images.githubusercontent.com/67041069/91691088-08050f00-eba2-11ea-81a2-631d837df620.png)
+
