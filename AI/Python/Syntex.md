@@ -27,6 +27,33 @@
     - 1줄의 내용이 길어서 여러줄로 타이핑 해야 할 경우 이용  
     ![image](https://user-images.githubusercontent.com/67041069/91840154-34e12100-ec8b-11ea-8014-067ddf1a9a73.png)  
     
+### 표준출력 print()  
+  - ![image](https://user-images.githubusercontent.com/67041069/91840494-bb95fe00-ec8b-11ea-950d-0e3b4fa67ead.png)  
+  - ex  
+![image](https://user-images.githubusercontent.com/67041069/91840840-4d057000-ec8c-11ea-9f24-e26b0ba950ad.png)    
+![image](https://user-images.githubusercontent.com/67041069/91840890-61e20380-ec8c-11ea-8ba1-5bb263145d6a.png)    
+  - 확장문자(escape sequence)  
+    - \' : 따옴표 문자  
+    - \" : 쌍따옴표 문자  
+    - \  : backslash 문자  
+    - \a : bell 문자  
+    - \b : backspace 문자  
+    - \f : Formfeed 문자  
+    - \n : newline 문자  
+    - \r : carriage return 문자 (\n과 동일하지 않다.)  
+    - \t : tab 문자  
+    - \v : vertical tab 문자  
+  
+  - {}와 % 출력  
+    - {}을 출력하려면 {{{ }}} 이렇게 세번 연달아 입력해야 한다.  
+    - % 자체를 출력하려면 %% 입력해야 한다.  
+    ![image](https://user-images.githubusercontent.com/67041069/91841552-8a1e3200-ec8d-11ea-8bc4-52338f0fb8cc.png)  
+   
+
+
+
+
+    
     
   
     
