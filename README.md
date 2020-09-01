@@ -43,4 +43,8 @@ I can do it
  - [Annotation](https://github.com/Gyubin0302/Java_Study/blob/master/Spring/Annotation.md)  
  - [AOP](https://github.com/Gyubin0302/Java_Study/blob/master/Spring/AOP.md)  
  
+# AI  
+ - [Library](https://github.com/Gyubin0302/Java_Study/tree/master/AI)  
+ 
+ 
 
