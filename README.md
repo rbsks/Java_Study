@@ -45,7 +45,7 @@ I can do it
  
 # AI  
  - [Anaconda](https://github.com/Gyubin0302/Java_Study/blob/master/AI/Anconda.md)  
- - [Library](https://github.com/Gyubin0302/Java_Study/tree/master/AI)  
+ - [Library](https://github.com/Gyubin0302/Java_Study/blob/master/AI/Library.md)  
  
  
 
