@@ -48,6 +48,28 @@
     - {}을 출력하려면 {{{ }}} 이렇게 세번 연달아 입력해야 한다.  
     - % 자체를 출력하려면 %% 입력해야 한다.  
     ![image](https://user-images.githubusercontent.com/67041069/91841552-8a1e3200-ec8d-11ea-8bc4-52338f0fb8cc.png)  
+  
+  - 형식에 format 맞추어 출력 : "출력형식".format(data...)  
+    - {}을 지정하면 format에 기술한 출력 대상들이 대응되어 출력  
+    - {n}안에 숫자를 지정하여 출력 대상의 위치를 지정  
+    - 함수의 인자처럼 키워드를 사용하여 나타낼 수 있다.  
+    - 동일한 데이터를 여러번 출력할 수 있다.  
+    - 자바로는 prinf를 쓰면 동일하게 쓸 수 있다.  
+    ![image](https://user-images.githubusercontent.com/67041069/91842370-e2096880-ec8e-11ea-9cfb-ce83737cb3ba.png)    
+    
+### 수치 연산(+, -, /, *,  **, //, %)   
+  - + : 더하기
+  - - : 빼기  
+  - / : 나누기 (결과 값 실수)  
+  - * : 곱하기  
+  - ** : 제곱  
+  - // : 나누기 (결과 값 정수)  
+  - % : 나머지  
+  ![image](https://user-images.githubusercontent.com/67041069/91842782-999e7a80-ec8f-11ea-92c1-fe4ce6205db2.png)  
+
+    
+    
+    
    
 
 
