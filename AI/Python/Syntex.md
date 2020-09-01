@@ -60,6 +60,12 @@
 ### 수치 연산(+, -, /, *,  **, //, %)    
   ![image](https://user-images.githubusercontent.com/67041069/91842782-999e7a80-ec8f-11ea-92c1-fe4ce6205db2.png)    
   
+### 문자열  
+  - 이중따옴표 또는 싱글따옴표로 표시  
+  - 파이썬은 문자라는 자료형이 존재하지 않는다. 모두 문자열    
+  ![image](https://user-images.githubusercontent.com/67041069/91843508-cf902e80-ec90-11ea-90fa-a31a41f8bef1.png)  
+  
+  
 
     
     
