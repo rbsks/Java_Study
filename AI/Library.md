@@ -20,5 +20,13 @@
     다(예를 들면 정수, 날짜, 부동소숫점, 문자열). SQL, 엑셀 파일, CSV 파일 같은 다양한 파일과   
     데이터베이스에서 데이터를 읽어 들일 수 있는 것이 pandas가 제공하는 또 하나의 유용한 기능이다.  
     
-    ![image](https://user-images.githubusercontent.com/67041069/91691088-08050f00-eba2-11ea-81a2-631d837df620.png)
+    ![image](https://user-images.githubusercontent.com/67041069/91691088-08050f00-eba2-11ea-81a2-631d837df620.png)  
+    
+### Matplotlib  
+  - matplotlib은 파이썬에서 매트랩과 유사한 대표적인 과학 계산용 그래프 라이브러리다.   
+  - 선 그래프, 히스토그램, 산점도 등을 지원하며 출판에 쓸 수 있을 만큼의 고품질 그래프를 그려줍니다.  
+    데이터와 분석 결과를 다양한 관점에서 시각화 해보면 매우 중요한 통찰을 얻을 수 있습니다.  
+  - 주피터 노트북에서 사용할 때는 %matplotlib notebook이나 %matplotlib inline 명령을 사용하면 브라우저에     서 바로 이미지를 볼 수 있습니다. 대화식 환경을 제공하는 %matplotlib notebook 명령을 권장합니다.  
+   ![image](https://user-images.githubusercontent.com/67041069/91786587-ea3bb680-ec42-11ea-8b79-       46aef375db6c.png)  
+   ![image](https://user-images.githubusercontent.com/67041069/91786595-ef006a80-ec42-11ea-96db-81047b8117a0.png)    
 
