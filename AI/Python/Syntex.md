@@ -57,15 +57,9 @@
     - 자바로는 prinf를 쓰면 동일하게 쓸 수 있다.  
     ![image](https://user-images.githubusercontent.com/67041069/91842370-e2096880-ec8e-11ea-9cfb-ce83737cb3ba.png)    
     
-### 수치 연산(+, -, /, *,  **, //, %)   
-  - + : 더하기
-  - - : 빼기  
-  - / : 나누기 (결과 값 실수)  
-  - * : 곱하기  
-  - ** : 제곱  
-  - // : 나누기 (결과 값 정수)  
-  - % : 나머지  
-  ![image](https://user-images.githubusercontent.com/67041069/91842782-999e7a80-ec8f-11ea-92c1-fe4ce6205db2.png)  
+### 수치 연산(+, -, /, *,  **, //, %)    
+  ![image](https://user-images.githubusercontent.com/67041069/91842782-999e7a80-ec8f-11ea-92c1-fe4ce6205db2.png)    
+  
 
     
     
