@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -30,7 +31,7 @@
 					</p>
 				</div>
 				<div class="create_id">
-					지금 부터 우리와 함께하기 <a href="./signupcontroller"><i>회원가입</i></a>
+					지금 부터 우리와 함께하기 <a href="/signupcontroller"><i>회원가입</i></a>
 				</div>
 			</form>
 		</div>
@@ -44,14 +45,14 @@
 			};
 
 			$.ajax({
-				url : "./logincontroller",
+				url : "/logincontroller",
 				type : "post",
 				datatype : "json",
 				data : memberInfo,
 				async : true,
 				success : function(data) {
 					alert(data);
-					location.href = "./bbslistcontroller";
+					location.href = "/bbslistcontroller";
 				},
 				error : function() {
 					alert("error");
@@ -60,7 +61,7 @@
 			});
 
 		});
+	</script>
+</body>
+</html>
 
-		</body>
-		</html>
-	
