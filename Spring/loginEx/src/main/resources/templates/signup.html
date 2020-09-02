@@ -50,7 +50,7 @@
 			};
 
 			$.ajax({
-				url : "./addMemcontroller",
+				url : "/addMemcontroller",
 				type : "post",
 				data : member,
 				datatype : "json",
@@ -67,7 +67,7 @@
 
 		$("#check_id").click(function() { //버튼 클릭시 아이디 중복 확인
 			$.ajax({
-				url : "./checkidcontroller",
+				url : "/checkidcontroller",
 				type : "get",
 				data : {
 					id : $("#id").val()
