@@ -7,6 +7,6 @@
   
   - calc.py에 if__name__='__main__'이 있을 경우 실행결과  
   ![image](https://user-images.githubusercontent.com/67041069/92612498-e409a200-f2f4-11ea-94d2-dd87b3f9b3d7.png)  
-  ![image](https://user-images.githubusercontent.com/67041069/92612482-dfdd8480-f2f4-11ea-80d2-c0c61e8a4850.png)
+  ![image](https://user-images.githubusercontent.com/67041069/92612616-ff74ad00-f2f4-11ea-8196-15b900e69b3e.png)
 
   
