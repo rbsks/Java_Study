@@ -1,4 +1,4 @@
-# Java_Study  
+# Java_Study     
 Java Study 일지  
 꾸준하게 매일매일 공부하기  
 I can do it  
