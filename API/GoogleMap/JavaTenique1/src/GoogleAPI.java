@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
 public class GoogleAPI {
 	public void downloadMap(String location) {
 		try {
-			String imageURL = "https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyC8Un5TEXbB8cb1ZVWxDjP84a8xkS5a5RM&center="
+			String imageURL = "https://maps.googleapis.com/maps/api/staticmap?key={myKey}&center="
 								+URLEncoder.encode(location,"UTF-8")+"&zoom=11&size=612x612&scale=2";
 			URL url = new URL(imageURL);
 			InputStream is = url.openStream();
