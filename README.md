@@ -4,8 +4,6 @@ Java Study 일지
 I can do it   
 
 ------------------------------------------------------------------  
-# Mini project  
-- [mini project](https://github.com/Gyubin0302/Java_Study/tree/master/mini%20project/MiniProject)  
 
 # 참고 사이트  
 - [oakHouse](http://oakhouse.gitbook.io/materials/greater-than-lambda/what-is-lambda)    
@@ -14,9 +12,6 @@ I can do it
 - [java base](https://github.com/Gyubin0302/Java_Study/tree/master/java)    
 - [java OOP](https://github.com/Gyubin0302/Java_Study/tree/master/java%20OOP)  
 
-# Web  
-- [Create account](https://github.com/Gyubin0302/Java_Study/blob/master/Web/Create%20account.md)  
-- [Mountain](https://github.com/Gyubin0302/Java_Study/tree/master/Web/Mountain)  
 
 # Algorithm  
 - [Sort](https://github.com/Gyubin0302/Java_Study/tree/master/Algorithm/Sort)  
@@ -26,14 +21,6 @@ I can do it
 - [Star](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Star.md)  
 - [Notation conversion](https://github.com/Gyubin0302/Java_Study/blob/master/Algorithm/Notation%20conversion.md)  
 
-# JavaScript  
-- [JS Exam](https://github.com/Gyubin0302/Java_Study/tree/master/JS/JavaScriptExam/WebContent)  
-
-
-# Oracle
- - [Oracle install](https://github.com/Gyubin0302/Java_Study/blob/master/Oracle/Oracle%20install.md)  
- - [SCOTT 계정 활성화](https://github.com/Gyubin0302/Java_Study/blob/master/Oracle/SCOTT%20%EA%B3%84%EC%A0%95%20%ED%99%9C%EC%84%B1%ED%99%94.md)  
- 
 # JDBC
  - [JDBC Test](https://github.com/Gyubin0302/Java_Study/tree/master/JDBC/JDBC%20Test)   
  - [Banking JDBC](https://github.com/Gyubin0302/Java_Study/tree/master/JDBC/Banking%20JDBC)  
@@ -46,12 +33,7 @@ I can do it
 # API  
  - [GoogleMap](https://github.com/Gyubin0302/Java_Study/tree/master/API/GoogleMap) 
  - [산정보](https://github.com/Gyubin0302/Java_Study/tree/master/API/%EC%82%B0%20%EC%A0%95%EB%B3%B4)  
- 
-# AI  
- - [Anaconda](https://github.com/Gyubin0302/Java_Study/blob/master/AI/Anconda.md)  
- - [Library](https://github.com/Gyubin0302/Java_Study/blob/master/AI/Library.md)  
- - [Python](https://github.com/Gyubin0302/Java_Study/tree/master/AI/Python)  
- 
+
  
  
 
