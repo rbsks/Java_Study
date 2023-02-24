@@ -10,7 +10,6 @@ I can do it
 
 ■ Java
 - [java base](https://github.com/Gyubin0302/Java_Study/tree/master/java)    
-- [java OOP](https://github.com/Gyubin0302/Java_Study/tree/master/java%20OOP)  
 
 
 # Algorithm  
